@@ -11,6 +11,7 @@ body {
   display: flex;
   justify-content: space-around;
 }
+
 .top {
   color: white;
 }
@@ -23,14 +24,18 @@ body {
   margin-left: 2cm;
   display: block;
   margin-top: 3cm;
+  justify-content: space-around;
 }
 .icons {
-  height: 16px;
+  margin-top: 16px;
+
+  /* height: 16px;
   position: absolute;
-  right: 3cm;
-  bottom: 50%;
-  justify-content: space-evenly;
+  /* right: 3cm; */
+  /* bottom: 50%; */
+  justify-content: right;
   size: 64px;
+  float: right;
 }
 h2 {
   font-family: "Poppins", sans-serif;
@@ -46,4 +51,16 @@ button {
   border-radius: 32px;
   font-size: 16px;
   padding: 16px;
+}
+@media screen and (max-width: 800px) {
+  .content {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    justify-self: center;
+    justify-content: space-around;
+  }
+  .main {
+    flex-direction: column;
+  }
 }
